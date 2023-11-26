@@ -1,0 +1,57 @@
+E:/3200102346/lab19_MusicPlayer/src/note_player.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/note_player.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module note_player
+
+Top level modules:
+	note_player
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/note_player_tb.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/note_player_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module note_player_tb_v
+
+Top level modules:
+	note_player_tb_v
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/dds.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/dds.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dds
+
+Top level modules:
+	dds
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/dffre.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/dffre.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module dffre
+
+Top level modules:
+	dffre
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module frequency_rom
+
+Top level modules:
+	frequency_rom
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module full_adder_n
+
+Top level modules:
+	full_adder_n
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/sine_rom.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/sine_rom.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module sine_rom
+
+Top level modules:
+	sine_rom
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/timer.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/timer.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module timer
+
+Top level modules:
+	timer
+
+} {} {}}

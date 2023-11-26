@@ -1,0 +1,29 @@
+E:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module song_reader_tb_v
+
+Top level modules:
+	song_reader_tb_v
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/song_rom.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/song_rom.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module song_rom
+
+Top level modules:
+	song_rom
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/song_reader.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/song_reader.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module song_reader
+
+Top level modules:
+	song_reader
+
+} {} {}} E:/3200102346/lab19_MusicPlayer/src/counter_n.v {1 {vlog -work work -vopt -stats=none E:/3200102346/lab19_MusicPlayer/src/counter_n.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module counter_n
+
+Top level modules:
+	counter_n
+
+} {} {}}

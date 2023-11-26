@@ -1,0 +1,784 @@
+
+*** Running vivado
+    with args -log MusicPLayerTop.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MusicPLayerTop.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source MusicPLayerTop.tcl -notrace
+Command: synth_design -top MusicPLayerTop -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4536 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 354.523 ; gain = 98.781
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MusicPLayerTop' [E:/3200102346/lab19_MusicPlayer/src/MusicPlayerTop.v:6]
+INFO: [Synth 8-638] synthesizing module 'DCM_PLL' [E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'DCM_PLL' (1#1) [E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/realtime/DCM_PLL_stub.v:5]
+INFO: [Synth 8-638] synthesizing module 'button_process_unit' [E:/3200102346/lab19_MusicPlayer/src/button_process_unit.v:4]
+INFO: [Synth 8-256] done synthesizing module 'button_process_unit' (2#1) [E:/3200102346/lab19_MusicPlayer/src/button_process_unit.v:4]
+INFO: [Synth 8-638] synthesizing module 'music_player' [E:/3200102346/lab19_MusicPlayer/src/music_player.v:1]
+	Parameter sim bound to: 0 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter_n' [E:/3200102346/lab19_MusicPlayer/src/counter_n.v:1]
+	Parameter counter_bits bound to: 10 - type: integer 
+	Parameter n bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n' (3#1) [E:/3200102346/lab19_MusicPlayer/src/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'mcu' [E:/3200102346/lab19_MusicPlayer/src/mcu.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter PAUSE bound to: 1 - type: integer 
+	Parameter PLAY bound to: 2 - type: integer 
+	Parameter NEXT bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mcu' (4#1) [E:/3200102346/lab19_MusicPlayer/src/mcu.v:1]
+INFO: [Synth 8-638] synthesizing module 'song_reader' [E:/3200102346/lab19_MusicPlayer/src/song_reader.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter NEW_NOTE bound to: 1 - type: integer 
+	Parameter WAIT bound to: 2 - type: integer 
+	Parameter NEXT_NOTE bound to: 3 - type: integer 
+	Parameter PLAY bound to: 0 - type: integer 
+	Parameter END bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'counter_n__parameterized0' [E:/3200102346/lab19_MusicPlayer/src/counter_n.v:1]
+	Parameter counter_bits bound to: 5 - type: integer 
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_n__parameterized0' (4#1) [E:/3200102346/lab19_MusicPlayer/src/counter_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'song_rom' [E:/3200102346/lab19_MusicPlayer/src/song_rom.v:12]
+INFO: [Synth 8-256] done synthesizing module 'song_rom' (5#1) [E:/3200102346/lab19_MusicPlayer/src/song_rom.v:12]
+INFO: [Synth 8-256] done synthesizing module 'song_reader' (6#1) [E:/3200102346/lab19_MusicPlayer/src/song_reader.v:1]
+INFO: [Synth 8-638] synthesizing module 'simul' [E:/3200102346/lab19_MusicPlayer/src/simul.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre' [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+	Parameter n bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre' (7#1) [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'simul' (8#1) [E:/3200102346/lab19_MusicPlayer/src/simul.v:1]
+INFO: [Synth 8-638] synthesizing module 'note_player' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:1]
+	Parameter RESET bound to: 0 - type: integer 
+	Parameter WAIT bound to: 1 - type: integer 
+	Parameter PLAY bound to: 2 - type: integer 
+	Parameter DONE bound to: 3 - type: integer 
+	Parameter LOAD bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized0' [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+	Parameter n bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized0' (8#1) [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'frequency_rom' [E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v:1]
+INFO: [Synth 8-256] done synthesizing module 'frequency_rom' (9#1) [E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v:1]
+INFO: [Synth 8-638] synthesizing module 'dds' [E:/3200102346/lab19_MusicPlayer/src/dds.v:1]
+INFO: [Synth 8-638] synthesizing module 'full_adder_n' [E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v:1]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'full_adder_n' (10#1) [E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized1' [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+	Parameter n bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized1' (10#1) [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized2' [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+	Parameter n bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized2' (10#1) [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+INFO: [Synth 8-638] synthesizing module 'sine_rom' [E:/3200102346/lab19_MusicPlayer/src/sine_rom.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sine_rom' (11#1) [E:/3200102346/lab19_MusicPlayer/src/sine_rom.v:1]
+INFO: [Synth 8-638] synthesizing module 'dffre__parameterized3' [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+	Parameter n bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dffre__parameterized3' (11#1) [E:/3200102346/lab19_MusicPlayer/src/dffre.v:1]
+INFO: [Synth 8-256] done synthesizing module 'dds' (12#1) [E:/3200102346/lab19_MusicPlayer/src/dds.v:1]
+INFO: [Synth 8-638] synthesizing module 'timer' [E:/3200102346/lab19_MusicPlayer/src/timer.v:1]
+	Parameter counter_bits bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'timer' (13#1) [E:/3200102346/lab19_MusicPlayer/src/timer.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/3200102346/lab19_MusicPlayer/src/note_player.v:33]
+INFO: [Synth 8-256] done synthesizing module 'note_player' (14#1) [E:/3200102346/lab19_MusicPlayer/src/note_player.v:1]
+INFO: [Synth 8-256] done synthesizing module 'music_player' (15#1) [E:/3200102346/lab19_MusicPlayer/src/music_player.v:1]
+INFO: [Synth 8-638] synthesizing module 'AudioInterface' [E:/3200102346/lab19_MusicPlayer/src/AudioInterface.v:10]
+INFO: [Synth 8-256] done synthesizing module 'AudioInterface' (16#1) [E:/3200102346/lab19_MusicPlayer/src/AudioInterface.v:10]
+INFO: [Synth 8-256] done synthesizing module 'MusicPLayerTop' (17#1) [E:/3200102346/lab19_MusicPlayer/src/MusicPlayerTop.v:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 407.531 ; gain = 151.789
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 407.531 ; gain = 151.789
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/dcp1/DCM_PLL_in_context.xdc] for cell 'DCM_inst'
+Finished Parsing XDC File [E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/dcp1/DCM_PLL_in_context.xdc] for cell 'DCM_inst'
+Parsing XDC File [E:/3200102346/lab19_MusicPlayer/src/music_player.xdc]
+Finished Parsing XDC File [E:/3200102346/lab19_MusicPlayer/src/music_player.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/3200102346/lab19_MusicPlayer/src/music_player.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MusicPLayerTop_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MusicPLayerTop_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 803.758 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/dcp1/DCM_PLL_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/.Xil/Vivado-4784-DESKTOP-7Q7BIQ1/dcp1/DCM_PLL_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for DCM_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/song_rom.v:26]
+WARNING: [Synth 8-6014] Unused sequential element dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v:15]
+WARNING: [Synth 8-6014] Unused sequential element dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/sine_rom.v:7]
+WARNING: [Synth 8-6014] Unused sequential element q_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/timer.v:11]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'note_player'
+INFO: [Synth 8-5544] ROM "timer_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "timer_clear" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nextstate" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'note_done_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'nextstate_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:39]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                               00 |                              000
+                    WAIT |                               01 |                              001
+                    DONE |                               10 |                              011
+                    LOAD |                               11 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'note_player'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_nextstate_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'timer_clear_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:29]
+WARNING: [Synth 8-327] inferring latch for variable 'load_reg' [E:/3200102346/lab19_MusicPlayer/src/note_player.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
+	   3 Input      1 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 21    
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
++---ROMs : 
+	                              ROMs := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module counter_n 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+Module mcu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module counter_n__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module song_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module song_reader 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module dffre 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dffre__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                6 Bit    Registers := 1     
+Module frequency_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module full_adder_n 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 21    
+	   2 Input      1 Bit         XORs := 1     
+Module dffre__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 1     
+Module dffre__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sine_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module dffre__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module dds 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+Module timer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+Module note_player 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      1 Bit       Adders := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   8 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element music_player_inst/note_player1/dds1/diff4/q_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/dffre.v:9]
+WARNING: [Synth 8-6040] Register Àô¼±ÿ driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-6014] Unused sequential element music_player_inst/song_reader1/song_rom1/dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/song_rom.v:26]
+WARNING: [Synth 8-6014] Unused sequential element music_player_inst/note_player1/FreqROM/dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v:15]
+WARNING: [Synth 8-6014] Unused sequential element music_player_inst/note_player1/dds1/sinerom1/dout_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/sine_rom.v:7]
+WARNING: [Synth 8-6014] Unused sequential element music_player_inst/note_player1/song_timer/q_reg was removed.  [E:/3200102346/lab19_MusicPlayer/src/timer.v:11]
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/note_done_reg) is unused and will be removed from module MusicPLayerTop.
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/FSM_sequential_nextstate_reg[1]) is unused and will be removed from module MusicPLayerTop.
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/FSM_sequential_nextstate_reg[0]) is unused and will be removed from module MusicPLayerTop.
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/timer_clear_reg) is unused and will be removed from module MusicPLayerTop.
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/load_reg) is unused and will be removed from module MusicPLayerTop.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+-------------------------------------------------------+---------------+----------------+
+|Module Name    | RTL Object                                            | Depth x Width | Implemented As | 
++---------------+-------------------------------------------------------+---------------+----------------+
+|song_rom       | dout_reg                                              | 128x12        | Block RAM      | 
+|frequency_rom  | dout_reg                                              | 64x20         | Block RAM      | 
+|sine_rom       | dout_reg                                              | 1024x16       | Block RAM      | 
+|MusicPLayerTop | music_player_inst/song_reader1/song_rom1/dout_reg     | 128x12        | Block RAM      | 
+|MusicPLayerTop | music_player_inst/note_player1/FreqROM/dout_reg       | 64x20         | Block RAM      | 
+|MusicPLayerTop | music_player_inst/note_player1/dds1/sinerom1/dout_reg | 1024x16       | Block RAM      | 
++---------------+-------------------------------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM_inst/clk_out1' to pin 'DCM_inst/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'DCM_inst/clk_out2' to pin 'DCM_inst/bbstub_clk_out2/O'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 803.758 ; gain = 548.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (music_player_insti_2/\music_player_inst/note_player1/FreqROM/dout_reg[19] )
+WARNING: [Synth 8-3332] Sequential element (music_player_inst/note_player1/FreqROM/dout_reg[19]) is unused and will be removed from module MusicPLayerTop.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance music_player_inst/song_reader1/song_rom1/dout_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance music_player_inst/note_player1/dds1/sinerom1/dout_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------+----------+
+|      |BlackBox name       |Instances |
++------+--------------------+----------+
+|1     |DCM_PLL             |         1|
+|2     |button_process_unit |         2|
+|3     |AudioInterface      |         1|
++------+--------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |AudioInterface         |     1|
+|2     |DCM_PLL                |     1|
+|3     |button_process_unit    |     1|
+|4     |button_process_unit__1 |     1|
+|5     |CARRY4                 |     7|
+|6     |LUT1                   |    20|
+|7     |LUT2                   |    13|
+|8     |LUT3                   |    33|
+|9     |LUT4                   |    12|
+|10    |LUT5                   |    30|
+|11    |LUT6                   |    47|
+|12    |RAMB18E1               |     1|
+|13    |RAMB18E1_2             |     1|
+|14    |FDRE                   |    96|
+|15    |IBUF                   |     4|
+|16    |OBUF                   |     7|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+--------------------+--------------------------+------+
+|      |Instance            |Module                    |Cells |
++------+--------------------+--------------------------+------+
+|1     |top                 |                          |   330|
+|2     |  music_player_inst |music_player              |   260|
+|3     |    c1              |counter_n                 |    25|
+|4     |    mcu1            |mcu                       |    12|
+|5     |    note_player1    |note_player               |   184|
+|6     |      FreqROM       |frequency_rom             |    44|
+|7     |      dds1          |dds                       |    92|
+|8     |        diff1       |dffre__parameterized1     |    39|
+|9     |        diff2       |dffre__parameterized2     |     1|
+|10    |        diff3       |dffre__parameterized3     |    16|
+|11    |        sinerom1    |sine_rom                  |     5|
+|12    |      dload         |dffre__parameterized0     |    26|
+|13    |      song_timer    |timer                     |    17|
+|14    |    simul1          |simul                     |     6|
+|15    |      dffre1        |dffre                     |     4|
+|16    |      dffre2        |dffre_0                   |     2|
+|17    |    song_reader1    |song_reader               |    33|
+|18    |      ads_counter   |counter_n__parameterized0 |    14|
+|19    |      song_rom1     |song_rom                  |    14|
++------+--------------------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 819.273 ; gain = 167.305
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 819.273 ; gain = 563.531
+INFO: [Project 1-571] Translating synthesized netlist
+Parsing EDIF File [E:/3200102346/lab19_MusicPlayer/src/button_process_unit.edf]
+Finished Parsing EDIF File [E:/3200102346/lab19_MusicPlayer/src/button_process_unit.edf]
+Parsing EDIF File [E:/3200102346/lab19_MusicPlayer/src/AudioInterface.edf]
+Finished Parsing EDIF File [E:/3200102346/lab19_MusicPlayer/src/AudioInterface.edf]
+INFO: [Netlist 29-17] Analyzing 87 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, AudioInterface_inst/ADC_SDATA_IBUF_inst, from the path connected to top-level port: ADC_SDATA 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/LeftPlayData_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[0]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[10]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[11]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[12]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[13]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[14]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[15]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[16]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[17]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[18]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[19]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[1]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[20]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[21]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[22]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[23]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[2]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[3]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[4]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[5]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[6]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[7]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[8]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/RightPlayData_IBUF[9]_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. AudioInterface_inst/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, AudioInterface_inst/reset_IBUF_inst, from the path connected to top-level port: reset 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, next_button_process_unit/ButtonIn_IBUF_inst, from the path connected to top-level port: next_button 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. next_button_process_unit/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, next_button_process_unit/reset_IBUF_inst, from the path connected to top-level port: reset 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, play_button_process_unit/ButtonIn_IBUF_inst, from the path connected to top-level port: play_button 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. play_button_process_unit/clk_IBUF_inst 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-35] Removing redundant IBUF, play_button_process_unit/reset_IBUF_inst, from the path connected to top-level port: reset 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, BCLK_OBUF_inst, from the path connected to top-level port: BCLK 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, DAC_SDATA_OBUF_inst, from the path connected to top-level port: DAC_SDATA 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, LRCLK_OBUF_inst, from the path connected to top-level port: LRCLK 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/error_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[0]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[10]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[15]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[16]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[17]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[18]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[19]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[1]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[20]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[21]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[22]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[23]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[2]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[3]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[4]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[5]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[6]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[7]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[8]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/LeftRecData_OBUF[9]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-36] Removing redundant OBUF, MCLK_OBUF_inst, from the path connected to top-level port: MCLK 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/NewFrame_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[14]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[13]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[12]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. AudioInterface_inst/RightRecData_OBUF[11]_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. next_button_process_unit/ButtonOut_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+WARNING: [Opt 31-33] Removing redundant OBUF since it is not driving a top-level port. play_button_process_unit/ButtonOut_OBUF_inst 
+Resolution: The tool has removed redundant OBUF. To resolve this warning, check for redundant OBUF in the input design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 820.613 ; gain = 576.344
+INFO: [Common 17-1381] The checkpoint 'E:/3200102346/lab19_MusicPlayer/vivado/Music_player/Music_player.runs/synth_1/MusicPLayerTop.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file MusicPLayerTop_utilization_synth.rpt -pb MusicPLayerTop_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 820.613 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  2 14:55:53 2022...

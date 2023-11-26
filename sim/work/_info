@@ -1,0 +1,333 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dE:/3200102346/lab15_dds/sim
+vcounter_n
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 O<`3DKYWRZ2M7NgIKc2d=0
+ICgfzUMlcEj2=TTdeWHN5:1
+Z1 dE:/3200102346/lab19_MusicPlayer/sim
+w1654002242
+8E:/3200102346/lab19_MusicPlayer/src/counter_n.v
+FE:/3200102346/lab19_MusicPlayer/src/counter_n.v
+L0 1
+Z2 OL;L;10.4;61
+!s108 1654146884.383000
+!s107 E:/3200102346/lab19_MusicPlayer/src/counter_n.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/counter_n.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vdds
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 ge>>iQYLE^^MM]IVX^76O3
+I]EfJOmL[MT>>2QHHnWbj`0
+R1
+w1651735780
+8E:/3200102346/lab19_MusicPlayer/src/dds.v
+FE:/3200102346/lab19_MusicPlayer/src/dds.v
+L0 1
+R2
+!s108 1654146812.349000
+!s107 E:/3200102346/lab19_MusicPlayer/src/dds.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/dds.v|
+!i113 0
+R3
+vdffre
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 VYji7f7_UAOC99155R`G@3
+I<BB;^TO=gCk`:4HX43Hm:2
+R1
+w1651736573
+8E:/3200102346/lab19_MusicPlayer/src/dffre.v
+FE:/3200102346/lab19_MusicPlayer/src/dffre.v
+L0 1
+R2
+!s108 1654146812.449000
+!s107 E:/3200102346/lab19_MusicPlayer/src/dffre.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/dffre.v|
+!i113 0
+R3
+vfrequency_rom
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 a7FnjVUcRjd1M[[J91Aj53
+I9?N^5nHBMj2lZd7MT]lPf3
+R1
+w1525795200
+8E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v
+FE:/3200102346/lab19_MusicPlayer/src/frequency_rom.v
+L0 1
+R2
+!s108 1654146812.534000
+!s107 E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/frequency_rom.v|
+!i113 0
+R3
+vfull_adder_n
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 z9kWG7TQ?YjPVU^SS>]Km0
+I>zE1Tcbc;9PiV[PY3gS:N2
+R1
+w1651731714
+8E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v
+FE:/3200102346/lab19_MusicPlayer/src/full_adder_n.v
+L0 1
+R2
+!s108 1654146812.634000
+!s107 E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/full_adder_n.v|
+!i113 0
+R3
+vmcu
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 WlmfhFm7EMkCS_aSf]>ln0
+Ic<N8NX8g=9Jd[R6jn^E7k2
+R1
+w1652335994
+8E:/3200102346/lab19_MusicPlayer/src/mcu.v
+FE:/3200102346/lab19_MusicPlayer/src/mcu.v
+L0 1
+R2
+!s108 1654146812.734000
+!s107 E:/3200102346/lab19_MusicPlayer/src/mcu.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/mcu.v|
+!i113 0
+R3
+vmcu_tb_v
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 3hafPDe;F;21h^zHOLjgM3
+I`jBh4LfZ;H`P=dfW_5Io^1
+R1
+Z4 w1513526400
+8E:/3200102346/lab19_MusicPlayer/src/mcu_tb.v
+FE:/3200102346/lab19_MusicPlayer/src/mcu_tb.v
+L0 9
+R2
+!s108 1652336019.812000
+!s107 E:/3200102346/lab19_MusicPlayer/src/mcu_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/mcu_tb.v|
+!i113 0
+R3
+vmusic_player
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 G2``Pe?]@h[di_^:e4iS=2
+IhP:kEYegN7o4MXK4lM6L^0
+R1
+w1653550606
+8E:/3200102346/lab19_MusicPlayer/src/music_player.v
+FE:/3200102346/lab19_MusicPlayer/src/music_player.v
+L0 1
+R2
+!s108 1654146812.819000
+!s107 E:/3200102346/lab19_MusicPlayer/src/music_player.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/music_player.v|
+!i113 0
+R3
+vmusic_player_tb_v
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 [R0c]V0F^dH[IFVgck0?62
+IebW:YXiOPCJM[6a>Y2kJk0
+R1
+R4
+8E:/3200102346/lab19_MusicPlayer/src/music_player_tb.v
+FE:/3200102346/lab19_MusicPlayer/src/music_player_tb.v
+L0 8
+R2
+!s108 1654146812.919000
+!s107 E:/3200102346/lab19_MusicPlayer/src/music_player_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/music_player_tb.v|
+!i113 0
+R3
+vnote_player
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 5EA`FIP_Pok7O7>WzZ6Fa0
+IzP8EeW?gH:Rn`R_<gc9_]2
+R1
+w1653545953
+8E:/3200102346/lab19_MusicPlayer/src/note_player.v
+FE:/3200102346/lab19_MusicPlayer/src/note_player.v
+L0 1
+R2
+!s108 1654146813.051000
+!s107 E:/3200102346/lab19_MusicPlayer/src/note_player.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/note_player.v|
+!i113 0
+R3
+vnote_player_tb_v
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 lC0[3eNi5mkV^8MjK[eaN0
+ICznL_WT1n1N`F@<nm]Ha72
+R1
+w1527696000
+8E:/3200102346/lab19_MusicPlayer/src/note_player_tb.v
+FE:/3200102346/lab19_MusicPlayer/src/note_player_tb.v
+L0 8
+R2
+!s108 1653544037.755000
+!s107 E:/3200102346/lab19_MusicPlayer/src/note_player_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/note_player_tb.v|
+!i113 0
+R3
+vsimul
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 nfTYhOkZ>P@eIHG@4Dc2d0
+I3ENMXS8R:CcGLndcUj45<0
+R1
+w1653548614
+8E:/3200102346/lab19_MusicPlayer/src/simul.v
+FE:/3200102346/lab19_MusicPlayer/src/simul.v
+L0 1
+R2
+!s108 1654146813.135000
+!s107 E:/3200102346/lab19_MusicPlayer/src/simul.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/simul.v|
+!i113 0
+R3
+vsine_rom
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 D3K_4AT3T4NM_<B_nTOVQ1
+Ii7Ig^]d63][85oIdSlP5Y3
+R1
+w1651127763
+8E:/3200102346/lab19_MusicPlayer/src/sine_rom.v
+FE:/3200102346/lab19_MusicPlayer/src/sine_rom.v
+L0 1
+R2
+!s108 1654146813.220000
+!s107 E:/3200102346/lab19_MusicPlayer/src/sine_rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/sine_rom.v|
+!i113 0
+R3
+vsong_reader
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 H1>GeKVKR0[Adag7W5Ygg2
+ImL=>JO>Y`]PS^ZV>2fd]a2
+R1
+w1654151224
+8E:/3200102346/lab19_MusicPlayer/src/song_reader.v
+FE:/3200102346/lab19_MusicPlayer/src/song_reader.v
+L0 1
+R2
+!s108 1654151235.125000
+!s107 E:/3200102346/lab19_MusicPlayer/src/song_reader.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/song_reader.v|
+!i113 0
+R3
+vsong_reader_tb_v
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 IPiR]HjH1NE<UT298ni7R3
+ISnY<l8igZONE;4GVjAj`h1
+R1
+R4
+8E:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v
+FE:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v
+L0 9
+R2
+!s108 1652942088.165000
+!s107 E:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/song_reader_tb.v|
+!i113 0
+R3
+vsong_rom
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 a8CaDQa3XihZ36d9do`]C3
+IIWV10SYKE]jUeOEgl5o6Y0
+R1
+w1525881600
+8E:/3200102346/lab19_MusicPlayer/src/song_rom.v
+FE:/3200102346/lab19_MusicPlayer/src/song_rom.v
+L0 12
+R2
+!s108 1654146813.405000
+!s107 E:/3200102346/lab19_MusicPlayer/src/song_rom.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/song_rom.v|
+!i113 0
+R3
+vtimer
+R0
+r1
+!s85 0
+31
+!i10b 1
+!s100 N5SKOTG88SBI?oC[R7z4m0
+IHTKA;ONz7<^lb8SDNBSe71
+R1
+w1653544787
+8E:/3200102346/lab19_MusicPlayer/src/timer.v
+FE:/3200102346/lab19_MusicPlayer/src/timer.v
+L0 1
+R2
+!s108 1654146812.117000
+!s107 E:/3200102346/lab19_MusicPlayer/src/timer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|E:/3200102346/lab19_MusicPlayer/src/timer.v|
+!i113 0
+R3
